@@ -2,6 +2,7 @@ import React from "react";
 class VoteButton extends React.Component {
   constructor(props) {
     super(props);
+    this.text = this.props.type === "down" ? "Downvote:" : "Upvote:";
 
     this.state = {
       counter: 10
@@ -26,7 +27,7 @@ class VoteButton extends React.Component {
     return (
       <button onClick={this.handleClick}>
         {" "}
-        {this.props.title} {this.state.counter}
+        {this.text} {this.state.counter}
       </button>
     );
   }

@@ -8,8 +8,8 @@ function App() {
       <header className="App-header">
         <h1>Vote Buttons</h1>
         <div className="buttons">
-          <VoteButton type="up" title="Upvote:" />
-          <VoteButton type="down" title="Downvote:" />
+          <VoteButton type="up" />
+          <VoteButton type="down" />
         </div>
       </header>
     </div>
