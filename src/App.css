@@ -22,3 +22,15 @@
 h1 {
   color: blueviolet;
 }
+
+.buttons {
+  display: flex;
+}
+
+button {
+  margin: 10px;
+  border-radius: 8px;
+  padding: 5px;
+  background-color: rgb(17, 53, 172);
+  color: white;
+}
