@@ -7,8 +7,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Vote Buttons</h1>
-        <VoteButton />
-        <VoteButton />
+        <div className="buttons">
+          <VoteButton type="up" title="Upvote:" />
+          <VoteButton type="down" title="Downvote:" />
+        </div>
       </header>
     </div>
   );
