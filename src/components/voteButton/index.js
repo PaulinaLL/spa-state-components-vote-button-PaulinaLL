@@ -4,9 +4,9 @@ class VoteButton extends React.Component {
     super(props);
 
     this.state = {
-      counters: {
-        button1: 0,
-        button2: 0
+      button: {
+        up: 0,
+        down: 0
       }
     };
     this.handleClick = this.handleClick.bind(this);
@@ -24,9 +24,9 @@ class VoteButton extends React.Component {
   handleClick() {
     console.log("hshs");
     this.setState({
-      counters: {
-        button1: upVote(),
-        button2: downVote()
+      button: {
+        up: this.upVote(),
+        down: this.downVote()
       }
     });
   }
@@ -34,8 +34,9 @@ class VoteButton extends React.Component {
   render() {
     return (
       <div className="">
-        <button onClick={this.upVote}>upvote:</button>
-        <button onClick={this.downVote}>downvote:</button>
+        <button onClick={this.handleClick}>
+          upvote: {this.state.button.up}
+        </button>
       </div>
     );
   }
